@@ -1,0 +1,50 @@
+// ion-content{
+//     --background: url('/assets/bgadmin.png');
+    
+//   }
+
+// ion-item{
+//     --border-radius: 20px;
+//     --background: transparent;
+//     color: white;
+//     // font-family: 'century gothic';
+//   }
+
+ion-content{
+    --background: url('/assets/bgadmin.png');
+    
+  }
+
+  ion-item{
+    //   text-align: center;
+    border-radius: 50px;
+    // --background: transparent;
+    // font-weight: 600;
+    background-color: #ffffff;
+    // background: rgb(76, 175, 80);
+    opacity: 0.75;
+    // color: white;
+    // font-family: 'century gothic';
+  }
+
+  .text-color label{
+    // margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  ion-title{
+    width: fit-content;
+  }
+
+  ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    font-family: century gothic;
+    
+    }
+    .show-background {
+      border-style: none;
+      background: linear-gradient(to right top, #f07f5f, #f79c5d, #f8b961, #f4d66f, #ecf287);
+    }
+    

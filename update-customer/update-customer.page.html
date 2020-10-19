@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Update Customer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" fullscreen>
+  <br><br><br><br>
+  <ion-item>
+    <ion-label class="text-color" position="floating">Name</ion-label>
+    <ion-input class="text-color" type="text" [(ngModel)]="user.name" required></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label class="text-color" position="floating">Phone No.</ion-label>
+    <ion-input class="text-color" type="string" [(ngModel)]="user.phone" required></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label class="text-color" position="floating">Address</ion-label>
+    <ion-textarea class="text-color" type="string" [(ngModel)]="user.address" required></ion-textarea>
+  </ion-item>
+
+  <br><br>
+
+  <ion-button width="90%" type="submit" color="success" expand="block" shape="round" (click)="updateUser(user)">
+    UPDATE CUSTOMER
+  </ion-button>
+
+</ion-content>

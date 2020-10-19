@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar [class.show-background]="showToolbar">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add New Product</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen [scrollEvents]="true" (ionScroll)="onScroll($event)">
+  <form [formGroup]="createProductForm" (ngSubmit)="createProduct(product)">
+    <br>
+    <ion-item>
+      <ion-label class="input" position="floating">Name</ion-label>
+      <ion-input class="font" type="text" formControlName="name" required></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label class="input" position="floating">Decription</ion-label>
+      <ion-input class="font" type="text" formControlName="desc" required></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label class="input" position="floating">Price (RM)</ion-label>
+      <ion-input class="font" type="number" formControlName="price" required></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label class="input" position="floating">Quantity</ion-label>
+      <ion-input class="font" type="number" formControlName="stock" required></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label class="input" position="floating">Category</ion-label>
+      <ion-select value="Food" formControlName="category" required>
+        <ion-select-option required value="Food">Food</ion-select-option>
+        <ion-select-option required value="Drink">Drink</ion-select-option>
+        <ion-select-option required value="Vegetable">Vegetable</ion-select-option>
+        <ion-select-option required value="Fruit">Fruit</ion-select-option>
+        <ion-select-option required value="Others">Others</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <br>
+    <ion-button type="submit" color="success" expand="block" shape="round" (click)="createProduct(product)">
+      <ion-icon name="add-outline"></ion-icon>
+      ADD PRODUCT
+    </ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ (product | async )?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card class="font">
+    <p class="pics"><img src="assets/food.png" width="50%" /></p>
+
+    <ion-card-header>
+
+      <ion-card-title>{{ (product | async )?.name}}</ion-card-title>
+      <ion-card-subtitle class="font-size">{{ (product | async )?.price | currency:'RM'}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="ion-text-justify">
+      {{ (product | async )?.desc}}
+    </ion-card-content>
+  </ion-card>
+  <div class="ion-padding">
+    <ion-label color="success">Availale in Stock</ion-label>
+    <ion-label color="dark"> {{ (product | async )?.stock}}</ion-label><br>
+  </div>
+</ion-content>

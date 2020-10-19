@@ -1,0 +1,37 @@
+ion-content{
+    --background: url('/assets/background.png');
+//     --overflow: hidden;
+//   overflow: auto;
+
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+  }
+
+p{
+    text-align: justify;
+    font-size: 11px;
+}
+
+h1{
+    font-family: Century Gothic;
+    font-weight: 600;
+    text-align: center;
+}
+
+// .scroll-bar-indicator
+// {
+// 	display: none;
+// }
+
+// .scroller {
+//     overflow-x: scroll;
+//     -webkit-overflow-scrolling: touch;
+//     -ms-overflow-style: none;  // IE 10+
+//     scrollbar-width: none;  // Firefox
+//     scroll-behavior: smooth;
+
+//     &::-webkit-scrollbar {
+//       display: none; // Safari and Chrome
+//     }
+// }

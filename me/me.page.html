@@ -1,0 +1,21 @@
+<ion-content class="background-class" fullscreen>
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+        <img src="assets/profile.jpg" alt="">
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="user-meta ion-text-center">
+        <h3 class="playername">{{user.email}}</h3>
+      </div>
+      <br>
+      <ion-button expand="block" color="primary" [routerLink]="['/faq']" color="warning"
+        routerLinkActive="router-link-active">FAQs</ion-button>
+      <ion-button expand="block" color="secondary" [routerLink]="['/contact']" color="light-warning">ABOUT US
+      </ion-button>
+      <ion-button expand="block" color="secondary" (click)="close()" color="faq">LOGOUT</ion-button>
+
+    </div>
+  </div>
+</ion-content>

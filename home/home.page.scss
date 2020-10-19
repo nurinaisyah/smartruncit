@@ -1,0 +1,75 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content{
+  --background: url('/assets/background.png');
+  font-family: Century gothic;
+}
+
+ion-item{
+  --border-radius: 20px;
+  --background: transparent;
+  font-family: Century gothic;
+}
+
+ion-icon{
+  margin-top: 22px;
+}
+
+ion-footer{
+  --background: transparent;
+}
+
+.icon{
+  margin-top: 0px;
+}
+
+.login{
+  text-align: center;
+  font-size: 13px;
+}
+
+.fpass{
+  text-align: right;
+  font-size: 13px;
+  padding-right: 15px;
+}
+
+ion-button{
+  font-size: 15px;
+  font-family: century gothic;
+  font-weight: 700;
+  // color: linear-gradient(to right top, #f07f5f, #f79c5d, #f8b961, #f4d66f, #ecf287);
+}
+
+.input{
+  font-family: century gothic;
+}
+
+
+

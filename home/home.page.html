@@ -1,0 +1,52 @@
+
+<ion-content class="background">
+  <br><br>
+  <p class="ion-text-center">
+    <img src="/assets/logo.png" width="60%">
+  </p>
+  
+  <ion-grid fixed class="bgtransparent">
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <ion-item >
+          <ion-icon class="iconic" name="person-outline" slot="start"></ion-icon>
+          <ion-label class="input" position="floating">Email Address</ion-label>
+          <ion-input class="input" type="email" [(ngModel)]="user.email" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <ion-item>
+          
+          <ion-label class="input" position="floating">Password</ion-label>
+          <ion-icon class="iconic" name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-input class="input" type="password" [(ngModel)]="user.password" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+  
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <ion-button (click)="login(user)"  color="warning" expand="block" shape="round">
+          <ion-icon class="icon" name="log-in-outline" slot="end"></ion-icon>
+          LOGIN
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <p class="fpass">
+      <ion-label (click) = "resetPassword()" underline>Forgot Password?</ion-label>
+      <!-- <button (click) = "resetPassword()">Forgot Password?</button> -->
+    </p>
+    <br><br>
+    <p class="login">
+      Don't have any account? <a [routerLink]="['/signup']">Sign Up</a>
+      <br>
+      Are you an Admin? <a [routerLink]="['/login-admin']">Click here</a>
+      <!-- Are an Admin? <a [routerLink]="['/admin']">Click here</a> -->
+    </p>
+
+  </ion-grid>
+</ion-content>

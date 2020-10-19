@@ -1,0 +1,54 @@
+<ion-content class="bgtransparent">
+  <div class="ion-padding">
+
+    <p class="ion-text-center">
+      <img src="/assets/logo.png" width="60%">
+    </p>
+    <h3 class="ion-text-center"><b>Register</b></h3>
+    <p>
+      <ion-item class="font">
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-label class="input" position="floating">Email Address</ion-label>
+        <ion-input class="font" type="email" [(ngModel)]="user.email" required></ion-input>
+      </ion-item>
+      <ion-item class="font">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-label class="input" position="floating">Password</ion-label>
+        <ion-input class="font" type="password" [(ngModel)]="user.password" required></ion-input>
+      </ion-item>
+    </p>
+    <form [formGroup]="createUserForm" (ngSubmit)="createUser(user)">
+      <ion-item class="font">
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-label class="input" position="floating">Name</ion-label>
+        <ion-input class="font" type="text" formControlName="name" required></ion-input>
+      </ion-item>
+      <ion-item class="font">
+        <ion-icon name="call-outline" slot="start"></ion-icon>
+        <ion-label class="input" position="floating">Phone Number</ion-label>
+        <ion-input class="font" type="text" formControlName="phone" required></ion-input>
+      </ion-item>
+      <br>
+      <ion-item class="font">
+        <ion-icon name="home-outline" slot="start"></ion-icon>
+        <ion-label class="input" position="floating">Address</ion-label>
+        <ion-input class="font" type="text" formControlName="address" required></ion-input>
+      </ion-item>
+      <br>
+
+      <p class="tnc">
+        <ion-checkbox class="chk"></ion-checkbox>
+        <ion-label class="font-tnc">I agree with the <a [routerLink]="['/tnc']">Terms and Condition</a></ion-label>
+      </p>
+      <p>
+        <ion-button color="warning" expand="block" shape="round" (click)="createUser(user)">
+          REGISTER
+        </ion-button>
+      </p>
+    </form>
+    <br>
+    <p class="login">
+      Already have any account? <a [routerLink]="['/home']"><br> Log In</a>
+    </p>
+  </div>
+</ion-content>

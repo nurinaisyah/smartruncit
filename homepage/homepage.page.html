@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar [class.show-background]="showToolbar">
+    <ion-title class="ion-text-center">Homepage</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen [scrollEvents]="true" (ionScroll)="onScroll($event)">
+
+  <ion-slides pager="true" #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)" autoplay="5000" loop="true"
+    speed="3000" class="slides" [options]="slideOpts">
+
+    <ion-slide *ngFor="let image of imageArray">
+      <img src="{{image.image}}" class="image-slide">
+    </ion-slide>
+  </ion-slides>
+
+  <h5 class="ion-text-center"><strong>Shop Product</strong></h5>
+
+  <ion-slides [options]="sliderConfig">
+    <ion-slide *ngFor="let product of productList | async">
+      <ion-card class="card-name">
+        <ion-card-header>
+          <ion-card-subtitle>
+            {{ product.name }}
+          </ion-card-subtitle>
+          <ion-card-content class="card-size">
+            {{ product.price | currency : 'RM' }}<br>
+            <img src="./assets/food.png" class="image"><br>
+            <p class="add">
+              <ion-button expand="block" color="warning" (click)="addToCart(product)">Add to Cart</ion-button>
+            </p>
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

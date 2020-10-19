@@ -1,0 +1,52 @@
+ion-content{
+    --background: url('/assets/bgadmin.png');
+    font-family: century gothic;
+  }
+
+  ion-item{
+    //   text-align: center;
+    border-radius: 50px;
+    // --background: transparent;
+    // font-weight: 600;
+    background-color: #ffffff;
+    // background: rgb(76, 175, 80);
+    opacity: 0.75;
+    // color: white;
+    // font-family: 'century gothic';
+  }
+
+  .text-color label{
+    // margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+
+   ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    font-family: century gothic;
+    
+    }
+  
+    ion-title{
+      width: fit-content;
+      margin-left: -25px;
+    }
+  
+    .show-background {
+      border-style: none;
+      background: linear-gradient(to right top, #f07f5f, #f79c5d, #f8b961, #f4d66f, #ecf287);
+    }
+
+    .input{
+      font-family: century gothic;
+    }
+
+    ion-button{
+      font-family: century gothic;
+      font-weight: 600;
+    }
+
+    .font{
+      font-weight: 300px;
+    }
