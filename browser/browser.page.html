@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar [class.show-background]="showToolbar">
+    <ion-title class="ion-text-center">Browse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen [scrollEvents]="true" (ionScroll)="onScroll($event)" class="font">
+  <ion-searchbar class="font" placeholder="eg: Mamee" type="text" (ionInput)="filterList($event)">
+  </ion-searchbar>
+  <ion-list-header>Shop Product</ion-list-header>
+
+  <ion-card *ngFor="let product of productList">
+   
+    <ion-item class="font">
+      <ion-avatar slot="start" routerLink="/view-product/{{ product.id }}">
+        <img src="./assets/food.png">
+      </ion-avatar>
+      <ion-label routerLink="/view-product/{{ product.id }}">
+        <h3 class="font">{{product.name}}</h3>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="8">
+            <ion-label color="dark" class="price">
+              <b class="font">{{ product.price | currency:'RM ' }}</b>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-label>
+    </ion-item>
+
+    <ion-button class="font" (click)="addToCart(product)" color="warning" expand="block">
+      <ion-icon name="bag-handle-outline" slot="end"></ion-icon>
+      ADD TO CART
+    </ion-button>
+  </ion-card>
+  
+</ion-content>

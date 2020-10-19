@@ -1,0 +1,22 @@
+ion-content {
+    --background: url('/assets/background.png');
+}
+
+.price{
+    width: 150px;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    font-family: century gothic;
+    }
+
+    ion-button{
+        font-size: 14px;
+    }
+
+    .show-background {
+        border-style: none;
+        background: linear-gradient(to right top, #f07f5f, #f79c5d, #f8b961, #f4d66f, #ecf287);
+      }

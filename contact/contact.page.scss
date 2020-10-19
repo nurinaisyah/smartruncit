@@ -1,0 +1,27 @@
+ion-content {
+    --background: url('/assets/background.png');
+    font-family: century gothic;
+}
+
+p{
+    text-align: center;
+    font-size: 14px;
+    // margin-top: -2px;
+}
+
+.contentt{
+    text-align: center;
+    // margin: auto;
+    // margin-left: 60px;
+}
+
+h4{
+    text-align: center;
+    font-weight: 500px;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    font-family: century gothic;
+  }

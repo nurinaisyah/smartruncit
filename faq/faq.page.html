@@ -1,0 +1,60 @@
+<ion-header class="toolbar-col">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="me"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" fullscreen>
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+<h1 class="text-size">
+  <strong class="faq">FAQ</strong>
+</h1>
+<p class="faq">Frequently Asked Question</p>
+<br>
+  <ion-list>
+    <ion-item class="item-content">
+      <ion-label class="font" (click)="first()">Q: How can I order?</ion-label></ion-item>
+      <ion-item *ngIf="first_section" color="#ffffff" class="faq-details">
+        <p >
+          You can order easily using our online platform. 
+          When you find a product you need, you can add it to cart and then checkout.
+          Once the item is ready, you can just need to wait for your order to be delivered.
+        </p>
+      </ion-item>
+  </ion-list>
+  <br>
+  <ion-list>
+    <ion-item class="item-content">
+      <ion-label class="font" (click)="second()"> Q: What payment methods<br> can I use?</ion-label>
+    </ion-item>
+    <ion-item  *ngIf="second_section" color="#ffffff" class="faq-details">
+      <p >We only provide Cash on Delivery services at the moment.</p>
+    </ion-item>
+  </ion-list>
+  <br>
+  <ion-list >
+    <ion-item class="item-content">
+      <ion-label class="font" (click)="third()"> Q: Do you have the <br>product in stock?</ion-label>
+    </ion-item>
+    <ion-item  *ngIf="third_section" color="#ffffff" class="faq-details">
+      <p>All the products which are shown on our site are available. 
+        Order lead time depends on the products and quantities.</p>
+    </ion-item>
+  </ion-list>
+  <br>
+  <ion-list>
+    <ion-item class="item-content">
+      <ion-label class="font" (click)="forth()">Q: How can I retrieve<br> my password?</ion-label>
+    </ion-item>
+<ion-item *ngIf="forth_section" color="#ffffff" class="faq-details">
+  <p>You can retrieve your password by clicking “forgot password?”. 
+    Instruction on password retrieval will be send to your email.</p>
+  
+</ion-item>
+  </ion-list>
+
+</ion-content>

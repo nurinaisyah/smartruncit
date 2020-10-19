@@ -1,0 +1,72 @@
+.title{
+    font-size: 22px;
+    // margin-top: 100px;
+    padding-left: 42px;
+    text-align: center;
+    font-family: century gothic;
+}
+
+ion-content{
+    --background: url('/assets/bgadmin.png'); 
+    font-family: century gothic;
+  }
+
+  .font{
+    font-weight: 600;
+  }
+
+  ion-list{
+    //   text-align: center;
+    border-radius: 50px;
+    // background: transparent;
+    font-weight: 600;
+    // background-color: #ffffff;
+    opacity: 0.75;
+    font-family: century gothic;
+    background: rgba(109, 95, 95, 0.2);
+    // color: #ffffff;
+    // color: white;
+    // font-family: 'century gothic';
+  }
+
+  ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    font-family: century gothic;
+  }
+
+  ion-title{
+    width: fit-content;
+  }
+
+  .show-background {
+    border-style: none;
+    background: linear-gradient(to right top, #f07f5f, #f79c5d, #f8b961, #f4d66f, #ecf287);
+  }
+
+  p{
+    font-weight: 600;
+  }
+
+
+  // .list list.transparent{
+  //   background: rgba(0, 0, 0, 0.2);
+  //   color: #ffffff;
+  // }
+
+  // ion-label{
+  //   background-color: rgba(109, 95, 95, 0.2);
+  //   // color: #ffffff;
+  // }
+
+
+
+  // .text-color label{
+    // margin: 5%;
+    // font-weight: bold;
+    // color: #000000;
+  // }
+
+// ion-toolbar{
+//     color: ;
+// }

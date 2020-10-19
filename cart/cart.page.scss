@@ -1,0 +1,32 @@
+ion-content {
+    --background: url('/assets/background.png');
+    font-family: century gothic;
+}
+
+ion-item{
+    --background: transparent;
+    
+    font-family: century gothic;
+    font-size: 15px;
+}
+
+.add{
+    align-self: center;
+    margin-left: -20px;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    font-family: century gothic;
+    }
+
+    .show-background {
+        border-style: none;
+        background: linear-gradient(to right top, #f07f5f, #f79c5d, #f8b961, #f4d66f, #ecf287);
+      }
+
+    ion-button{
+        font-family: century gothic;
+        font-weight: 600;
+    }

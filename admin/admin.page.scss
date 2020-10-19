@@ -1,0 +1,32 @@
+ion-content{
+    --background: url('/assets/bgadmin.png');
+    font-family: century gothic;
+  }
+
+  ion-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: century gothic;
+  }
+
+  .card-admin{
+    background-color: rgba(252, 161, 157);
+    font-weight: 600;
+    font-family: century gothic;
+  }
+
+  .font-admin{
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    font-family: century gothic;
+  }
+
+  .test{
+    margin-top: -30px;
+  }
+
+  ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    font-family: century gothic;
+  }

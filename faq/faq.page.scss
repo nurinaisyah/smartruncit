@@ -1,0 +1,50 @@
+
+.text-size{
+    font-size: 62px;
+    text-align: center;
+    background-color:transparent;
+}
+
+.faq{
+    color: darkslategrey;;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.ans{
+    
+    background-color: darkkhaki;
+}
+
+.faq-details{
+    text-align: center;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: century gothic;
+    // font-family: 'Courier New', Courier, monospace;
+}
+
+.font{
+    // text-align: center;
+    // border-radius: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+    font-size: 14px;
+    // border-radius: 50px;
+}
+
+ion-list {
+    background-color:transparent;
+    border-radius: 40px;
+  }
+
+    ion-content{
+    --background: url('/assets/background.png');
+  }
+
+  ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    font-family: century gothic;
+    }
+
+  

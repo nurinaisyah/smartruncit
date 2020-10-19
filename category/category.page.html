@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ (product | async )?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let product of productList | async" routerLink="/view-product/{{ product.id }}">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./avatar.svg">
+      </ion-avatar>
+      <ion-label>
+        <h3>{{product.name}}</h3>
+      </ion-label>
+
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <ion-label color="dark">
+            <b>{{ product.price | currency:'RM ' }}</b>
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-card>
+</ion-content>

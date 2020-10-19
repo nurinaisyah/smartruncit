@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="light" class="ion-text-center">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-grid fixed class="ion-text-center">
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="card-admin" [routerLink]="['/manage-product']">
+          <img src="./assets/manage-product.png" />
+          <ion-card-header>
+            <ion-card-subtitle class="font-admin">Manage Product</ion-card-subtitle>
+            <ion-card-title></ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col class="test" size="12">
+        <ion-card class="card-admin" [routerLink]="['/customer']">
+          <img src="./assets/manage-customer.jpg" />
+          <ion-card-header>
+            <ion-card-subtitle class="font-admin">Manage Customer</ion-card-subtitle>
+            <ion-card-title></ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
